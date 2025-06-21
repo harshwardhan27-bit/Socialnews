@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>socialnews 📰</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .card {
+      background-color: #222;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+    img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .reactions button {
+      margin: 5px;
+      padding: 8px 12px;
+      background-color: #333;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+    .vote-section, .opinion-section {
+      margin-top: 20px;
+      background-color: #222;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+    button.post {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>socialnews 📰</h1>
+
+  <div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Shah_Rukh_Khan.jpg" alt="SRK" />
+    <h2>🎬 Shah Rukh signs ₹300 Cr film with new director</h2>
+    <p>📰 SRK News</p>
+    <div class="reactions">
+      <button>🔥 Hot</button>
+      <button>💡 Smart</button>
+      <button>❌ Flop</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Alia_Bhatt_promoting_Badrinath_Ki_Dulhania.jpg" alt="Alia" />
+    <h2>👗 Alia Bhatt to launch teen-friendly fashion brand</h2>
+    <p>📰 Alia News</p>
+    <div class="reactions">
+      <button>🔥 Lit</button>
+      <button>🤯 Shocking</button>
+      <button>🤷‍♀️ Boring</button>
+    </div>
+  </div>
+
+  <div class="vote-section">
+    <h3>📊 Who's the coolest young actor?</h3>
+    <label><input type="radio" name="vote"> Kartik Aaryan</label><br>
+    <label><input type="radio" name="vote"> Siddhant Chaturvedi</label><br>
+    <label><input type="radio" name="vote"> Ishaan Khatter</label><br>
+    <button class="post">Vote</button>
+  </div>
+
+  <div class="opinion-section">
+    <h3>💬 Share your opinion (anonymous):</h3>
+    <input type="text" placeholder="e.g. SRK's comeback is fire!" />
+    <button class="post">Post</button>
+  </div>
+
+  <div class="card">
+    <h3>🎯 Bollywood Trivia</h3>
+    <p>Did you know SRK once rejected over 30 scripts in a year to stay picky?</p>
+  </div>
+
+</body>
+</html>
